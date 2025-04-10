@@ -6,7 +6,7 @@ with sr.Microphone() as fonte:
     audio = reconnaisseur.listen(fonte)
 
     try:
-        texto = reconnaisseur.recognize_google(audio, language="pt-BR")
+        texto = reconnaisseur.recognize_google(audio, language="fr-FR")
         print('Vous Avez dit :', texto)
     except sr.UnknownValueError:
         print("Não entendi...")
