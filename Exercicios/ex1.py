@@ -1,12 +1,12 @@
 import speech_recognition as sr
 
-reconhecedor = sr.Recognizer()
+reconnaisseur = sr.Recognizer()
 with sr.Microphone() as fonte:
-    print("Fala aí:")
-    audio = reconhecedor.listen(fonte)
+    print("Dit quelque chose :")
+    audio = reconnaisseur.listen(fonte)
 
     try:
-        texto = reconhecedor.recognize_google(audio, language="pt-BR")
-        print("Você disse:", texto)
+        texto = reconnaisseur.recognize_google(audio, language="pt-BR")
+        print('Vous Avez dit :', texto)
     except sr.UnknownValueError:
         print("Não entendi...")
