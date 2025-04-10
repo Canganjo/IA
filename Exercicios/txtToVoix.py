@@ -13,7 +13,7 @@ for voice in voices:
         engine.setProperty('voice', voice.id)
         break
 
-# Texte que vous souhaitez convertir en voix
+# Texte qu'on souhaite convertir en voix
 texte = "Bonjour, comment ça va ?"
 
 engine.setProperty('rate', 260)  # Velocidade da fala
